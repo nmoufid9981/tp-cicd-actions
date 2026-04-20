@@ -1,5 +1,5 @@
 function add(a, b) {
-  var result = a + b;  
+  const result = a + b;  
   return result;
 }
 function multiply(a, b) {
