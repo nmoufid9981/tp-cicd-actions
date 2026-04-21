@@ -1,10 +1,23 @@
-const { add, multiply, factorial } = require('../src/math');
+const { add, subtract, multiply, factorial } = require('../src/math');
 describe('add', () => {
 test('additionne deux nombres positifs', () => {
 expect(add(2, 3)).toBe(5);});
 test('additionne avec un nombre négatif', () => {
 expect(add(-1, 5)).toBe(4);
 });
+});
+describe('subtract', () => {
+  test('soustrait deux nombres positifs', () => {
+    expect(subtract(5, 3)).toBe(2);
+  });
+
+  test('soustrait avec un résultat négatif', () => {
+    expect(subtract(3, 5)).toBe(-2);
+  });
+
+  test('soustrait avec zéro', () => {
+    expect(subtract(5, 0)).toBe(5);
+  });
 });
 describe('multiply', () => {
 test('multiplie deux nombres', () => {
